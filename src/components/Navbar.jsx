@@ -1,101 +1,105 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-scroll';
-import { MdOutlineVerifiedUser } from 'react-icons/md';
-import Social from './Social';
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-scroll'
+import Social from './Social'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const navbarRef = useRef(null);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleClickOutside = (event) => {
-    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen]);
+  const [nav, setNav] = useState(false)
+  const handleClick = () => setNav(!nav)
 
   return (
-    <nav className="fixed w-full bg-red-900 p-4 z-50" ref={navbarRef}>
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="sm:text-right flex justify-between">
-          <a href="/" className="font-thin  border-b text-white border-white flex items-center">
-            <h2>Logo a definir</h2>
-          </a>
-        </div>
-        <div className="md:hidden">
-          <button onClick={toggleNavbar} className="text-white focus:outline-none">
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              )}
-            </svg>
-          </button>
-        </div>
-        <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
-          <ul className="md:flex mt-4 sm:space-y-0 space-y-4 text-center md:mt-0 space-x-4 text-white font-thin text-lg">
-            <li className='hover:text-gray-300 hover:cursor-pointer'>
-              <Link to="home" smooth={true} duration={500}>
-                Inicio
-              </Link>
-            </li>
-            <li className='hover:text-gray-300 hover:cursor-pointer'>
-              <Link to="main" smooth={true} duration={500}>
-                ¿Quien soy?
-              </Link>
-            </li>
-            <li className='hover:text-gray-300 hover:cursor-pointer'>
-              <Link to="trayectoria" smooth={true} duration={500}>
-                Trayectoria
-              </Link>
-            </li>
-            <li className='hover:text-gray-300 hover:cursor-pointer'>
-              <Link to="galeria" smooth={true} duration={500}>
-                Galeria
-              </Link>
-            </li>
-            <li className='hover:text-gray-300 hover:cursor-pointer'>
-              <Link to="publicaciones" smooth={true} duration={500}>
-                Sala de prensa
-              </Link>
-            </li>
-            <li className='hover:cursor-pointer object-contain'>
-              <Link className='border-2 border-gray-200 font-medium rounded-md py-1 px-2 bg-gray-200 hover:bg-gray-300 text-black' to="contacto" smooth={true} duration={500}>
-                Sumate Hoy
-              </Link>
-            </li>
-          </ul>
-        </div>
+    <div className='fixed z-50 w-full h-[60px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-red-900 text-gray-300'>
+      <div className='bg-gray-200 rounded-xl px-3 sm:text-2xl'>
+        <a href="/" className='text-black font-light'>
+          <span className='text-red-900'>#</span>Samuel<span className='text-red-900'>Si</span>
+        </a>
       </div>
-      <Social />
-    </nav>
-  );
-};
 
-export default Navbar;
+      {/* menu */}
+      <ul className='hidden md:flex justify-between space-x-5 text-white'>
+        <li>
+          <Link to='home' smooth={true} duration={1000}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to='main' smooth={true} duration={1000}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to='trayectoria' smooth={true} duration={1000}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to='galeria' smooth={true} duration={1000}>
+            Work
+          </Link>
+        </li>
+        <li>
+          <Link to='publicaciones' smooth={true} duration={1000}>
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link to='contacto' smooth={true} duration={1000}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+
+      {/* Hamburger */}
+      <div onClick={handleClick} className='md:hidden z-10'>
+        {!nav ? <FaBars /> : <FaTimes />}
+      </div>
+
+      {/* Mobile menu */}
+      <ul
+        className={`${
+          !nav
+            ? 'hidden opacity-0 transition-opacity duration-300'
+            : 'absolute top-0 left-0 w-full h-screen bg-red-900 opacity-95 flex flex-col justify-center items-center transition-all ease-in-out duration-300'
+        }`}
+      >
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='home' smooth={true} duration={1000}>
+            Inicio
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='main' smooth={true} duration={1000}>
+            ¿Quien soy?
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='trayectoria' smooth={true} duration={1000}>
+            Trayectoria
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='galeria' smooth={true} duration={1000}>
+            Galeria
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='publicaciones' smooth={true} duration={1000}>
+            Sala de prensa
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='contacto' smooth={true} duration={1000}>
+            Sumate Hoy
+          </Link>
+        </li>
+      </ul>
+
+      {/* Social icons */}
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <Social />
+      </div>
+    </div>
+  )
+}
+
+export default Navbar
