@@ -1,36 +1,36 @@
 import React, { useState, useEffect, useRef } from 'react'
-import MovingText from 'react-moving-text'
 import { FaAngleDown, FaPlay } from 'react-icons/fa'
+import { GoArrowUp } from "react-icons/go"
 
 const Home = () => {
-  const [showVideo, setShowVideo] = useState(true)
-  const [showTransition, setShowTransition] = useState(false)
-  const [showPlayButton, setShowPlayButton] = useState(true)
-  const videoRef = useRef(null)
+  const [showVideo, setShowVideo] = useState(true);
+  const [showTransition, setShowTransition] = useState(false);
+  const [showPlayButton, setShowPlayButton] = useState(true);
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const video = videoRef.current
+    const video = videoRef.current;
 
     const handleVideoEnded = () => {
-      setShowTransition(true)
+      setShowTransition(true);
       setTimeout(() => {
-        setShowVideo(false)
-        setShowPlayButton(false) // Oculta el botón después de que el video haya terminado
-      }, 100) // Delay para la transición
-    }
+        setShowVideo(false);
+        setShowPlayButton(false); // Oculta el botón después de que el video haya terminado
+      }, 100); // Delay para la transición
+    };
 
-    video.addEventListener('ended', handleVideoEnded)
+    video.addEventListener('ended', handleVideoEnded);
 
     return () => {
-      video.removeEventListener('ended', handleVideoEnded)
-    }
-  }, [])
+      video.removeEventListener('ended', handleVideoEnded);
+    };
+  }, []);
 
   const handlePlay = () => {
-    const video = videoRef.current
-    video.play()
-    setShowPlayButton(false) // Oculta el botón al hacer clic en reproducir
-  }
+    const video = videoRef.current;
+    video.play();
+    setShowPlayButton(false); // Oculta el botón al hacer clic en reproducir
+  };
 
   return (
     <div name="home" className="pt-14 overflow-hidden relative">
@@ -54,7 +54,7 @@ const Home = () => {
                 showTransition ? 'opacity-0' : 'opacity-100'
               }`}
             >
-              <FaPlay size={30} />
+              <FaPlay className=" text-slate-800" size={30} />
             </button>
           )}
         </div>
@@ -71,10 +71,14 @@ const Home = () => {
 
       {/* Contenedor de texto superpuesto */}
       <div className="top-0 left-0 w-full h-auto flex items-center justify-center z-10 pt-3 font-thin">
+        <GoArrowUp />
         {/* Contenido del texto */}
+        {showPlayButton ? (
+          <h3 className="border-b-2">Reproduce el mensaje</h3>
+        ) : null}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
