@@ -7,7 +7,7 @@ const Social = () => {
         <div name="social" className=''>
 
             {/* Social icons */}
-            <div className='hidden sm:flex fixed flex-col top-[35%] left-0'>
+            <div className=' sm:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                 <li className='w-[250px] h-[55px] flex justify-between items-center ml-[-200px] hover:ml-[-180px] duration-300 bg-blue-600 rounded-lg'>
                     <a className='flex justify-end w-full text-white font-semibold' href="https://www.facebook.com/samuelhernandez2021/?locale=es_LA" target='_blank'><FaFacebookF className="text-4xl me-2" /></a>
