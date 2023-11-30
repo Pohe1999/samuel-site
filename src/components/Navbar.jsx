@@ -8,7 +8,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed z-50 w-full h-[60px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-red-900 text-gray-300'>
+    <div className='fixed z-50 w-full h-[65px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-red-900 text-gray-300'>
       <div className='bg-gray-200 rounded-xl px-3 sm:text-2xl'>
         <a href="/" className='text-black font-light'>
           <span className='text-red-900'>#</span>Samuel<span className='text-red-900'>Si</span>
@@ -16,35 +16,35 @@ const Navbar = () => {
       </div>
 
       {/* menu */}
-      <ul className='hidden md:flex justify-between space-x-5 text-white'>
+      <ul className='hidden md:flex justify-between items-center space-x-5 text-white'>
         <li>
-          <Link to='home' smooth={true} duration={1000}>
-            Home
+          <Link className='cursor-pointer hover:text-gray-300' to='home' smooth={true} duration={1000}>
+            Inicio
           </Link>
         </li>
         <li>
-          <Link to='main' smooth={true} duration={1000}>
-            About
+          <Link className='cursor-pointer hover:text-gray-300' to='main' smooth={true} duration={1000}>
+            ¿Quien soy?
           </Link>
         </li>
         <li>
-          <Link to='trayectoria' smooth={true} duration={1000}>
-            Skills
+          <Link className='cursor-pointer hover:text-gray-300' to='trayectoria' smooth={true} duration={1000}>
+            Trayectoria
           </Link>
         </li>
         <li>
-          <Link to='galeria' smooth={true} duration={1000}>
-            Work
+          <Link className='cursor-pointer hover:text-gray-300' to='galeria' smooth={true} duration={1000}>
+            Galeria
           </Link>
         </li>
         <li>
-          <Link to='publicaciones' smooth={true} duration={1000}>
-            Contact
+          <Link className='cursor-pointer hover:text-gray-300' to='publicaciones' smooth={true} duration={1000}>
+            Publicaciones
           </Link>
         </li>
-        <li>
+        <li className='py-1 px-2 text-lg font-light text-black bg-gray-200 rounded-xl cursor-pointer'>
           <Link to='contacto' smooth={true} duration={1000}>
-            Contact
+            Sumate Hoy
           </Link>
         </li>
       </ul>
@@ -87,7 +87,7 @@ const Navbar = () => {
             Sala de prensa
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
+        <li className='py-5 text-4xl text-black bg-gray-200 rounded-xl px-11 cursor-pointer'>
           <Link onClick={handleClick} to='contacto' smooth={true} duration={1000}>
             Sumate Hoy
           </Link>
