@@ -41,7 +41,7 @@ const Home = () => {
             ref={videoRef}
             id="home-video"
             className={`sm:w-full sm:h-full w-full h-full object-cover transition-opacity ${
-              showTransition ? 'opacity-0' : 'opacity-100'
+              showTransition ? 'opacity-50' : 'opacity-100'
             }`}
           >
             <source src="/samuel-home-video.mp4" type="video/mp4" />
