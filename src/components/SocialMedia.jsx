@@ -8,7 +8,7 @@ function SocialMediaButtons() {
     <div className="flex flex-col min-h-screen bg-center bg-cover bg-no-repeat">
       <div className="mx-auto p-8 md:p-20 space-y-8 md:space-y-10 bg-gray-200 rounded-3xl">
         <h1 className="text-3xl md:text-5xl font-semibold">
-          <span className='text-red-900'>S</span >umate <span className='text-red-900'>H</span>oy al <span className='text-red-900'>C</span>ambio
+          <span className='text-red-900'>S</span >úmate <span className='text-red-900'>H</span>oy al <span className='text-red-900'>C</span>ambio
         </h1>
         <h3 className='text-center font-light text-xl text-black'>Sumate a mis redes sociales o enviame un WhatsApp:</h3>
         <div className="">
@@ -31,7 +31,7 @@ function SocialMediaButtons() {
             className='flex flex-col max-w-[600px] w-full'
           >
             <div>
-              <p className='text-2xl md:text-3xl'>Envíame un Email y súmate:</p>
+              <p className='text-2xl md:text-3xl'>Envíame un correo y súmate:</p>
             </div>
             <input className='border-2 rounded-lg py-2 my-1 text-lg md:text-xl' type="text" placeholder='Nombre' name="name" required/>
             <input className='border-2 rounded-lg py-2 my-1 text-lg md:text-xl' type="email" placeholder='Escribe tu Email' name="email" required/>
