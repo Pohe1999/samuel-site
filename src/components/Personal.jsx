@@ -6,52 +6,58 @@ const Personal = () => {
   const cardsData = [
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Peliculas",
-      imagenes: ["/galeria/samuel-perfil.jpeg"],
+      ubicacion: "biblioteca José Vasconcelos",
+      likes: "Visitando la biblioteca",
+      imagenes: ["/card-1.png"],
+      link: "https://www.facebook.com/photo.php?fbid=877691507492745&set=pb.100057557125317.-2207520000&type=3"
+    },
+    {
+      nombre: "hrnndzsamuel",
+      ubicacion: "Arena Coliseo",
+      likes: "Domingo de luchas",
+      imagenes: ["/card-2.png"],
       link: "https://www.instagram.com/p/CzAbn-iqfsY/?img_index=1"
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Libros",
-      imagenes: ["/galeria/galeria-1.jpeg"]
+      ubicacion: "Estadio Azteca",
+      likes: "Apoyando al Cruz Azul",
+      imagenes: ["/card-3.jpeg"],
+      link: "https://www.facebook.com/photo.php?fbid=862625555666007&set=pb.100057557125317.-2207520000&type=3"
+    },
+    {
+      nombre: "hrnndzsamuel",
+      ubicacion: "Palacio Municipal",
+      likes: "Celebrando la independenia",
+      imagenes: ["/card-4.jpeg"],
+      link: "https://www.facebook.com/photo/?fbid=856242786304284&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
       ubicacion: "Tecamac",
-      likes: "Deportes",
-      imagenes: ["/galeria/galeria-2.jpeg"]
+      likes: "Disfrutando el domingo",
+      imagenes: ["/card-5.jpeg"],
+      link: "https://www.facebook.com/photo/?fbid=694954532433111&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
       ubicacion: "Tecamac",
-      likes: "Musica",
-      imagenes: ["/galeria/galeria-3.jpeg"]
+      likes: "terminando el año",
+      imagenes: ["/card-6.jpeg"],
+      link: "https://www.facebook.com/photo/?fbid=665478295380735&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Viajes",
-      imagenes: ["/galeria/galeria-4.jpeg"]
+      ubicacion: "Taqueria Arandas",
+      likes: "Disfrutando unos tacos",
+      imagenes: ["/card-7.jpeg"]
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Peliculas",
-      imagenes: ["/galeria/galeria-5.jpeg"]
-    },
-    {
-      nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Peliculas",
-      imagenes: ["/galeria/galeria-6.jpeg"]
-    },
-    {
-      nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Peliculas",
-      imagenes: ["/galeria/galeria-7.jpeg"]
+      ubicacion: "Boliche Santa Lucia",
+      likes: "Noche de boliche",
+      imagenes: ["/card-8.jpeg"],
+      link: "https://www.facebook.com/photo/?fbid=573327741262458&set=pb.100057557125317.-2207520000"
     }
   ];
 
