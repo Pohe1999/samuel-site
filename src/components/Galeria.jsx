@@ -97,7 +97,7 @@ const Galeria = () => {
             onClick={() => goToSlide(slideIndex)}
             className={`text-2xl cursor-pointer ${currentIndex === slideIndex ? 'text-red-700' : 'text-white'}`}
           >
-            <RxDotFilled />
+            <RxDotFilled className="text-gray-700" />
           </div>
         ))}
       </div>
