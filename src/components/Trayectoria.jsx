@@ -13,25 +13,25 @@ const Trayectoria = () => {
         title: "Participación política",
         image: "/morena-logo.png",
         description:
-          "Fui fundador de MORENA desde 2011 y activista en el movimiento estudiantil #YoSoy132, siendo portavoz. Además, En 2015 coordine la campaña de Morena en Tecámac para la alcaldía. En 2018, colaboró en la campaña de Andrés Manuel López Obrador.",
+          "Fui fundador de MORENA desde 2011 y activista en el movimiento estudiantil #YoSoy132, siendo portavoz. Además, en 2015 coordiné la campaña de Morena en Tecámac para la alcaldía. En 2018, colaboré en la campaña de Andrés Manuel López Obrador.",
       },
       {
         title: "Participación ISSSTE",
         image: "/gobierno-logo.png",
         description:
-          "Colabore junto al presidente de Mexico en el sector salud, donde llevamos a cabo la contratacion de mas de 6 mil medicos y enfermeras para atender la pandemia del COVID-19. Trabajamos para combatir la corrupcion en el ISSSTE.",
+          "Colaboré junto al presidente de México en el sector salud, donde llevamos a cabo la contratación de más de 6 mil médicos y enfermeras para atender la pandemia del COVID-19. Trabajamos para combatir la corrupción en el ISSSTE.",
       },
       {
         title: "Secretario de ayuntamiento",
         image: "/tecamac-logo.png",
         description:
-          "En julio de 2021 fui designado Secretario del Ayuntamiento de Tecámac cargo en el que impulse convenios con el ISSSTE para llevar a cabo la construcción de la nueva Clínica de Medicina Familiar  en Tecámac y el Centro de Innovación y Desarrollo Tecnológico de la UAM.",
+          "EEn julio de 2021 fui designado Secretario del Ayuntamiento de Tecámac, cargo en el que impulsé convenios con el ISSSTE para llevar a cabo la construcción de la nueva Clínica de Medicina Familiar en Tecámac y el Centro de Innovación y Desarrollo Tecnológico de la UAM.",
       },
       {
         title: "Director de ODAPAS",
         image: "/odapas-logo.png",
         description:
-          "En septiembre de 2022, fui designado Director general del ODAPAS, donde incrementamos la recaudación, apoyando a mas de 30 mil familias para regularizarse y ejecutamos el programa de obra hidraulica mas grande en 31 años, invirtiendo mas de 200 millones de pesos en beneficio de los tecamaquenses.",
+          "En septiembre de 2022, fui designado Director General del ODAPAS, donde incrementamos la recaudación, apoyando a más de 30 mil familias para regularizarse. Ejecutamos el programa de obra hidráulica más grande en 31 años, invirtiendo más de 200 millones de pesos en beneficio de los tecamaquenses.",
       },
   ];
 
