@@ -47,6 +47,7 @@ const Home = () => {
             ref={videoRef}
             id="home-video"
             className={`sm:w-full sm:h-full w-full h-full object-cover transition-opacity`}
+            playsInline
           >
             <source src="/samuel-home.mp4" type="video/mp4" />
             Tu navegador no soporta la etiqueta de video.
