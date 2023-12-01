@@ -28,7 +28,7 @@ const Personal = () => {
     {
       nombre: "hrnndzsamuel",
       ubicacion: "Palacio Municipal",
-      likes: "Celebrando la independenia",
+      likes: "Celebrando la independencia",
       imagenes: ["/card-4.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=856242786304284&set=pb.100057557125317.-2207520000"
     },
