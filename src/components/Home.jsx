@@ -40,9 +40,7 @@ const Home = () => {
           <video
             ref={videoRef}
             id="home-video"
-            className={`sm:w-full sm:h-full w-full h-full object-cover transition-opacity ${
-              showTransition ? 'opacity-50' : 'opacity-100'
-            }`}
+            className={`sm:w-full sm:h-full w-full h-full object-cover transition-opacity`}
           >
             <source src="/samuel-home-video.mp4" type="video/mp4" />
             Tu navegador no soporta la etiqueta de video.
@@ -63,14 +61,12 @@ const Home = () => {
         <img
           src="/galeria/samuelsi.png"
           alt="Imagen Fija"
-          className={`sm:w-full sm:h-full w-auto h-auto object-cover opacity-80 transition-opacity ${
-            showTransition ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`sm:w-full sm:h-full w-auto h-auto object-cover opacity-80 transition-opacity`}
         />
       )}
 
       {/* Contenedor de texto superpuesto */}
-      <div className="top-0 left-0 w-full h-auto flex items-center justify-center z-10 pt-3 font-thin">
+      <div className="top-0 left-0 w-full h-auto flex items-center justify-center z-10 pt-3 font-thin sm:hidden">
         <GoArrowUp />
         {/* Contenido del texto */}
         {showPlayButton ? (
