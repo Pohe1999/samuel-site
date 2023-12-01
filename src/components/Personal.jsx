@@ -50,7 +50,8 @@ const Personal = () => {
       nombre: "hrnndzsamuel",
       ubicacion: "Taqueria Arandas",
       likes: "Disfrutando unos tacos",
-      imagenes: ["/card-7.jpeg"]
+      imagenes: ["/card-7.jpeg"],
+      link: "https://www.facebook.com/photo/?fbid=626380562623842&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
