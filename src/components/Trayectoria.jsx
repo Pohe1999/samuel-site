@@ -25,7 +25,7 @@ const Trayectoria = () => {
         title: "Secretario de ayuntamiento",
         image: "/tecamac-logo.png",
         description:
-          "EEn julio de 2021 fui designado Secretario del Ayuntamiento de Tecámac, cargo en el que impulsé convenios con el ISSSTE para llevar a cabo la construcción de la nueva Clínica de Medicina Familiar en Tecámac y el Centro de Innovación y Desarrollo Tecnológico de la UAM.",
+          "En julio de 2021 fui designado Secretario del Ayuntamiento de Tecámac, cargo en el que impulsé convenios con el ISSSTE para llevar a cabo la construcción de la nueva Clínica de Medicina Familiar en Tecámac y el Centro de Innovación y Desarrollo Tecnológico de la UAM.",
       },
       {
         title: "Director de ODAPAS",
