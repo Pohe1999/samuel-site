@@ -36,7 +36,7 @@ function SocialMediaButtons() {
             <input className='border-2 rounded-lg py-2 my-1 text-lg md:text-xl' type="text" placeholder='Nombre' name="name" required/>
             <input className='border-2 rounded-lg py-2 my-1 text-lg md:text-xl' type="email" placeholder='Escribe tu Email' name="email" required/>
             <textarea className='border-2 rounded-lg py-10 text-lg md:text-xl' name="message" rows="4" placeholder='Mensaje' required></textarea>
-            <button className='border-b-2 hover:border-black duration-300 py-1'>// Enviar mensaje</button>
+            <button className='border-red-900 border-2 hover:bg-red-900 hover:text-white rounded-xl duration-300 py-2 mt-10'>// Enviar mensaje</button>
           </form>
         </div>
       </div>
