@@ -5,7 +5,7 @@ const Footer = () => {
             <p className="text-center text-white">Politicas de privacidad</p>
             <p className="text-center text-white">
                 @ 2023 Creado por: 
-                <a href="https://github.com/Pohe1999" target="_blank"> Mauricio Portillo Gutierrez</a>
+                <a href="https://www.instagram.com/mauriciopgz/" target="_blank"> Mauricio Portillo Gutierrez</a>
             </p>
         </div>
     )
