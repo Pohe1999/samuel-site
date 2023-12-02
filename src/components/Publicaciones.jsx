@@ -17,7 +17,7 @@ const Publicaciones = () => {
                     <div className="text-center">
                         <h3 className="font-bold text-xl border-b-2 border-b-black">El sol de Toluca</h3>
                         <p className="text-gray-700">
-                            Educacion para el desarrollo para lograr el bienestar :)
+                            Educacion para el desarrollo para lograr el bienestar
                         </p>
                     </div>
                     {/* Encale al articulo */}
