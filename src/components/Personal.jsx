@@ -28,20 +28,20 @@ const Personal = () => {
     {
       nombre: "hrnndzsamuel",
       ubicacion: "Palacio Municipal",
-      likes: "Celebrando la independencia",
+      likes: "Celebrando la independenia",
       imagenes: ["/card-4.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=856242786304284&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Ciudad de México",
-      likes: "Domingo familiar",
+      ubicacion: "Tecamac",
+      likes: "Disfrutando el domingo",
       imagenes: ["/card-5.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=694954532433111&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: " ",
+      ubicacion: "Tecamac",
       likes: "terminando el año",
       imagenes: ["/card-6.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=665478295380735&set=pb.100057557125317.-2207520000"
@@ -50,8 +50,7 @@ const Personal = () => {
       nombre: "hrnndzsamuel",
       ubicacion: "Taqueria Arandas",
       likes: "Disfrutando unos tacos",
-      imagenes: ["/card-7.jpeg"],
-      link: "https://www.facebook.com/photo/?fbid=626380562623842&set=pb.100057557125317.-2207520000"
+      imagenes: ["/card-7.jpeg"]
     },
     {
       nombre: "hrnndzsamuel",
