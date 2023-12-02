@@ -5,7 +5,7 @@ import { RxDotFilled } from 'react-icons/rx';
 const Galeria = () => {
   const slides = [
     {
-        url: '/galeria/galeria-9.jpeg'
+        url: '/galeria/galeria-9.jpg'
     },
     {
         url: '/galeria/galeria-3.jpeg'
@@ -23,7 +23,7 @@ const Galeria = () => {
         url: '/galeria/galeria-8.jpg'
     },
     {
-        url: '/galeria/galeria-1.jpg'
+        url: '/galeria/galeria-1.jpeg'
     }
   ];
 
