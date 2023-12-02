@@ -8,9 +8,6 @@ const Galeria = () => {
         url: '/galeria/galeria-1.jpeg'
     },
     {
-        url: '/galeria/galeria-2.jpeg'
-    },
-    {
         url: '/galeria/galeria-3.jpeg'
     },
     {
