@@ -73,7 +73,7 @@ const Galeria = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div className='sm:text-center pb-8 pt-4 px-4'>
-        <h2 className='text-4xl font-ubuntu font-semibold inline border-b-4 text-gray-900 border-red-700'>Galeria</h2>
+        <h2 className='text-4xl font-ubuntu font-semibold inline border-b-4 text-gray-900 border-red-700'>Galería</h2>
       </div>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
