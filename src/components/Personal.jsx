@@ -13,8 +13,8 @@ const Personal = () => {
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "biblioteca José Vasconcelos",
-      likes: "Tecamac",
+      ubicacion: "Ciudad de Mexico",
+      likes: "Saludando a la doctora",
       imagenes: ["/card-9.png"],
       link: "https://www.facebook.com/photo.php?fbid=797395995522297&set=a.515665293695370&type=3&mibextid=WC7FNe"
     },
