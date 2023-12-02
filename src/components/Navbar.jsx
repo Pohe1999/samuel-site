@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <div className='fixed z-50 w-full h-[65px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-red-900 text-gray-300'>
-      <div className='trounded-xl px-3 sm:text-2xl'>
+      <div className='trounded-xl px-3 sm:text-2xl bg-gray-300 rounded-md py-1'>
         <a href="/" className='text-white border-b-2 font-light'>
-          Samuel Hernandez
+         <img src="/logo-samuel.png" alt='logo' className='sm:h-10 h-7'></img>
         </a>
       </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
         </li>
         <li className='py-1 px-2 text-lg font-light text-black bg-gray-200 rounded-xl cursor-pointer'>
           <Link to='contacto' smooth={true} duration={1000}>
-            Súmate Hoy
+            Sumate Hoy
           </Link>
         </li>
       </ul>
@@ -87,9 +87,9 @@ const Navbar = () => {
             Sala de prensa
           </Link>
         </li>
-        <li className='py-2 text-4xl text-black bg-gray-200 rounded-xl px-11 cursor-pointer'>
+        <li className='py-2 text-4xl font-normal text-black bg-gray-200 rounded-xl px-11 cursor-pointer'>
           <Link onClick={handleClick} to='contacto' smooth={true} duration={1000}>
-            Súmate Hoy
+            Sumate Hoy
           </Link>
         </li>
       </ul>
