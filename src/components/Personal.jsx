@@ -99,7 +99,7 @@ const Personal = () => {
                 <span className="text-gray-600 text-xs block">{cardsData[index].ubicacion}</span>
               </div>
             </div>
-            <div style={{ height: '250px' }}> {/* Ajusta la altura según sea necesario */}
+            <div style={{ height: '270px' }}> {/* Ajusta la altura según sea necesario */}
               <img
                 src={cardsData[index].imagenes[currentImage]}
                 alt={`Main ${index}`}
