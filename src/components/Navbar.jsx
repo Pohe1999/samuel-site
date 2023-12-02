@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className='fixed z-50 w-full h-[65px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-red-900 text-gray-300'>
       <div className='trounded-xl px-3 sm:text-2xl bg-gray-300 rounded-md py-1'>
         <a href="/" className='text-white border-b-2 font-light'>
-         <img src="/logo-samuel.png" alt='logo' className='sm:h-10 h-8'></img>
+         <img src="/logo-samuel.png" alt='logo' className='sm:h-10 h-9'></img>
         </a>
       </div>
 
