@@ -41,7 +41,6 @@ const Main = () => {
                         Ádemás, colaboré en las campañas de AMLO en 2012 y 2018. He desempeñado roles importantes, incluyendo servicio público en el gobierno
                         federal, secretario del ayuntamiento de Tecámac, y director general del Organismo Municipal del Agua, ODAPAS. Actualmente,
                         tengo el honor de formar parte del destacado gobierno de Tecámac liderado por la Licenciada Mariela Gutiérrez.
-                        <p className='border-t-2 border-black sm:mt-44 mt-20'>¿Quieres saber más?  <a href="https://es.wikipedia.org/wiki/Samuel_Hernández_Cruz" target='_blank' className='hover:border-b-2 border-red-900'>Visita mi Wiki </a></p>
                       </p>
                   </div>
               </div>
