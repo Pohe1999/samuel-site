@@ -78,7 +78,7 @@ const Personal = () => {
   return (
     <div className="bg-gray-100 p-4 mt-20 mb-40 pb-10">
       <div className="text-center pb-10">
-        <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>Un poco mas de mi</h2>
+        <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>Un poco más de mi</h2>
       </div>
       <h3 className="text-center font-thin mb-7 text-xl">
         Les comparto un poco más de mi vida personal y mis pasatiempos.
