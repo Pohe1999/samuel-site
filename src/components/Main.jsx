@@ -24,7 +24,7 @@ const Main = () => {
           <div className='flex flex-col justify-center items-center w-full h-auto'>
               <div className='sm:text-right pb-8 mt-20 px-4'>
                   <div className='text-center font-thin text-xl sm:text-6xl text-white bg-red-900 bg-opacity-80 rounded-xl px-10 py-4'>
-                      <MovingText type="typewriter" dataText={['¿Quien es Samuel Hernández?']} />
+                      <MovingText type="typewriter" dataText={['¿Quién es Samuel Hernández?']} />
                   </div>
               </div>
               <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
@@ -38,7 +38,7 @@ const Main = () => {
                         y Asuntos Públicos. Continué mi trayectoria académica con la Maestría en Planeación y Políticas Metropolitanas.
                         <br /> <br />
                         Desde 2011, soy militante fundador de MORENA y he participado activamente en movimientos sociales y políticos como <a href="https://es.wikipedia.org/wiki/Yo_Soy_132" target='_blank' className='text-red-900 hover:border-b-2'>#YoSoy132.</a>
-                        Además, colaboré en las campañas de AMLO en 2012 y 2018. He desempeñado roles importantes, incluyendo servicio público en el gobierno
+                        Ádemás, colaboré en las campañas de AMLO en 2012 y 2018. He desempeñado roles importantes, incluyendo servicio público en el gobierno
                         federal, secretario del ayuntamiento de Tecámac, y director general del Organismo Municipal del Agua, ODAPAS. Actualmente,
                         tengo el honor de formar parte del destacado gobierno de Tecámac liderado por la Licenciada Mariela Gutiérrez.
                         <p className='border-t-2 border-black sm:mt-44 mt-20'>¿Quieres saber mas?  <a href="https://es.wikipedia.org/wiki/Samuel_Hernández_Cruz" target='_blank' className='hover:border-b-2 border-red-900'>Visita mi Wiki </a></p>
