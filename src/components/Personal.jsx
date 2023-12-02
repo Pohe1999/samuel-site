@@ -34,14 +34,14 @@ const Personal = () => {
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
-      likes: "Disfrutando el domingo",
+      ubicacion: "Ciudad de México",
+      likes: "Ciudad de México",
       imagenes: ["/card-5.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=694954532433111&set=pb.100057557125317.-2207520000"
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Tecamac",
+      ubicacion: " ",
       likes: "terminando el año",
       imagenes: ["/card-6.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=665478295380735&set=pb.100057557125317.-2207520000"
