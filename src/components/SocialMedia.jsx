@@ -10,7 +10,7 @@ function SocialMediaButtons() {
         <h1 className="text-3xl md:text-5xl font-semibold">
           <span className='text-red-900'>S</span >úmate <span className='text-red-900'>H</span>oy al <span className='text-red-900'>C</span>ambio
         </h1>
-        <h3 className='text-center font-light text-xl text-black'>Súmate a mis redes sociales o enviame un WhatsApp:</h3>
+        <h3 className='text-center font-light text-xl text-black border-b-2 border-black'>Súmate a mis redes sociales o enviame un WhatsApp:</h3>
         <div className="">
           <div className="flex justify-between">
               <a href="https://www.facebook.com/samuelhernandez2021" target='_blank' rel="noopener noreferrer" className='bg-blue-500 hover:opacity-80 duration-500 px-8 md:px-8 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded-xl'>
