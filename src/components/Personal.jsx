@@ -89,7 +89,7 @@ const Personal = () => {
             key={index}
             className="bg-white border rounded-2xl sm:w-full sm:min-w-0 shadow-2xl
                         md:w-1/2 lg:w-1/3 xl:w-1/4"  // Agregar estas clases para ajustar el tamaño en diferentes tamaños de pantalla
-            style={{ minWidth: '350px', width: '100%' }}
+            style={{ minWidth: '320px', width: '100%' }}
           >
             <div className="flex items-center px-4 py-3">
               <img className="h-8 w-8 rounded-full" src="/galeria/samuel-perfil.jpeg" alt="Profile" />
@@ -98,7 +98,7 @@ const Personal = () => {
                 <span className="text-gray-600 text-xs block">{cardsData[index].ubicacion}</span>
               </div>
             </div>
-            <div style={{ height: '300px' }}> {/* Ajusta la altura según sea necesario */}
+            <div style={{ height: '250px' }}> {/* Ajusta la altura según sea necesario */}
               <img
                 src={cardsData[index].imagenes[currentImage]}
                 alt={`Main ${index}`}
