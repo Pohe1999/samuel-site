@@ -6,6 +6,13 @@ const Personal = () => {
   const cardsData = [
     {
       nombre: "hrnndzsamuel",
+      ubicacion: "Estadio Azteca",
+      likes: "Apoyando al Cruz Azul",
+      imagenes: ["/card-3.jpeg"],
+      link: "https://www.facebook.com/photo.php?fbid=862625555666007&set=pb.100057557125317.-2207520000&type=3"
+    },
+    {
+      nombre: "hrnndzsamuel",
       ubicacion: "Tecamac",
       likes: "Nos encontramos a este amigo",
       imagenes: ["/card-10.png"],
@@ -31,13 +38,6 @@ const Personal = () => {
       likes: "Domingo de luchas",
       imagenes: ["/card-2.png"],
       link: "https://www.instagram.com/p/CzAbn-iqfsY/?img_index=1"
-    },
-    {
-      nombre: "hrnndzsamuel",
-      ubicacion: "Estadio Azteca",
-      likes: "Apoyando al Cruz Azul",
-      imagenes: ["/card-3.jpeg"],
-      link: "https://www.facebook.com/photo.php?fbid=862625555666007&set=pb.100057557125317.-2207520000&type=3"
     },
     {
       nombre: "hrnndzsamuel",
@@ -99,7 +99,7 @@ const Personal = () => {
                 <span className="text-gray-600 text-xs block">{cardsData[index].ubicacion}</span>
               </div>
             </div>
-            <div style={{ height: '270px' }}> {/* Ajusta la altura según sea necesario */}
+            <div style={{ height: '290px' }}> {/* Ajusta la altura según sea necesario */}
               <img
                 src={cardsData[index].imagenes[currentImage]}
                 alt={`Main ${index}`}
