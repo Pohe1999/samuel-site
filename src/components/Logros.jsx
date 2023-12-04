@@ -34,7 +34,7 @@ const Personal = () => {
   return (
     <div className=" p-4 mt-20 mb-40 pb-10">
       <div className="text-center pb-10">
-        <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>logros</h2>
+        <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>Logros</h2>
       </div>
       <h3 className="text-center font-thin mb-7 text-xl border-b-2">
         Avances y logros destacados. <br />  Desliza para conocer más
