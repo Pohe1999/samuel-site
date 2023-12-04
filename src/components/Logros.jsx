@@ -26,7 +26,7 @@ const Personal = () => {
       likes: "¡En #Tecámac ya contamos con una sede de la UAM Azcapotzalco!",
       imagenes: ["/logros-4.jpeg"],
       descripcion: "Más de 5,000 tecamaquenses capacitados en cursos virtuales del #CYCyT de La UAM. El rector Oscar Lozano y su equipo presentes en este proyecto para abrir el Ágora de Aranjuez, Villa del Real.",
-      link: "https://www.facebook.com/samuelhernandez2021/posts/pfbid0349D31KC6RNYKLc5nY6Soj3cHoLWt5LGu1qeuBPKgnTUfdg9EYdNCUVAC9UwZVNUel"
+      link: "https://www.facebook.com/samuelhernandez2021/posts/pfbid0dEgp7rDGJvXpqLi7ezPhcHSatBYyNaTwgG3fHVWt48EDfgBAaHKnuZ3omZRFucGSl"
     }
 
   ];
