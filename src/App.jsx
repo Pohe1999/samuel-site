@@ -18,8 +18,8 @@ function App() {
       <Navbar />
       <Home />
       <Main />
-      <Personal />
       <Trayectoria />
+      <Personal />
       <Galeria />
       <Publicaciones />
       <Contact />
