@@ -36,8 +36,8 @@ const Personal = () => {
       <div className="text-center pb-10">
         <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>logros</h2>
       </div>
-      <h3 className="text-center font-thin mb-7 text-xl">
-        Avances y logros destacados. <br />  Desliza para conocer mas
+      <h3 className="text-center font-thin mb-7 text-xl border-b-2">
+        Avances y logros destacados. <br />  Desliza para conocer más
       </h3>
       <div className="flex overflow-x-scroll sm:px-11 gap-4 sm:justify-start">
         {currentImages.map((currentImage, index) => (
