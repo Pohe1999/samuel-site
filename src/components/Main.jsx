@@ -28,7 +28,7 @@ const Main = () => {
                   </div>
               </div>
               <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                  <div className='sm:text-right text-4xl font-bold cursor-pointer' onClick={handleImageClick}>
+                  <div className='sm:text-right text-4xl font-bold cursor-pointer sm:mt-2 mt-20' onClick={handleImageClick}>
                       <img className='rounded-xl' src={mainImage} alt='main image' />
                   </div>
                   <div className='flex items-center'>
