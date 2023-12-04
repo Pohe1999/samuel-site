@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Galeria from './components/Galeria'
 import SocialMediaButtons from './components/SocialMedia'
 import Personal from './components/Personal'
+import Logros from './components/Logros'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Home />
       <Main />
       <Trayectoria />
+      <Logros />
       <Personal />
       <Galeria />
       <Publicaciones />
