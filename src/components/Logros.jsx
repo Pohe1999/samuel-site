@@ -44,7 +44,7 @@ const Personal = () => {
           <div
             key={index}
             className="bg-white border-2  rounded-2xl shadow-xl"
-            style={{ minWidth: '320px', width: '100%' }}
+            style={{ minWidth: '330px', width: '100%' }}
           >
             <div style={{ height: '290px' }}> {/* Ajusta la altura según sea necesario */}
               <img
