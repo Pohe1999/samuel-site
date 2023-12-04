@@ -46,7 +46,7 @@ const Home = () => {
           <video
             ref={videoRef}
             id="home-video"
-            className={`sm:w-full sm:h-full w-full h-full object-cover transition-opacity`}
+            className={`sm:w-full sm:h-full w-full h-full object-cover transition-opacity border-2 border-black`}
             playsInline
           >
             <source src="/samuel-home-2.mp4" type="video/mp4" />
