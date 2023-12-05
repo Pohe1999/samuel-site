@@ -21,7 +21,7 @@ const AlertaTemporal = () => {
   return (
     <div className={`fixed opacity-95 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-500 border-2 border-white shadow-2xl text-white p-4 rounded-xl z-50 ${mostrarAlerta ? 'block' : 'hidden'}`}>
       <div className='text-center'>
-        <p className="font-bold pb-5">¡Hola!, te invito a que veas la nueva publicación que realizó <span className='border-b-2'>La Jornada:</span></p>
+        <p className="font-bold pb-5">¡Hola!, te invito a que veas la entrevista que nos realizó <span className='border-b-2'>La Jornada:</span></p>
         <p>Tecámac: Proyectan obras que garanticen agua alrededor del AIFA</p>
       </div>
       <div className='flex items-center text-center justify-center pt-5'>
