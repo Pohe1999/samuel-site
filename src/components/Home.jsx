@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaPlay, FaRedo } from 'react-icons/fa'; // Importa el ícono de reinicio (FaRedo)
 import { GoArrowUp } from 'react-icons/go';
+import AlertaTemporal from './Alerta';
 
 const Home = () => {
   const [showVideo, setShowVideo] = useState(true);
@@ -40,6 +41,7 @@ const Home = () => {
 
   return (
     <div name="home" className="pt-14 overflow-hidden relative">
+      <AlertaTemporal />
       {/* Video */}
       {showVideo ? (
         <div className="relative">
