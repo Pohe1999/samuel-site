@@ -5,22 +5,22 @@ const Personal = () => {
 
   const cardsData = [
     {
-      likes: "Inaguracion de dos nuevos pozos en Villa del Real",
+      likes: "Inauguración de dos nuevos pozos en Villa del Real",
       imagenes: ["/logros-1.jpeg"],
       descripcion: "En un día histórico, Se entregaron dos pozos en #Tecámac, asegurando el agua. ODAPAS invirtió 190 millones en 50 acciones hidráulicas en 2023. Regularizamos 22 mil usuarios, sin aumentos en 2024.",
       link: "https://www.facebook.com/samuelhernandez2021/posts/pfbid0CRQYhevMVL5rffSVPmVXsGdztEAZ2cSyFbQSCThA34EXAAjFPZ4HSqEtQkaUJuPLl"
-    },
-    {
-      likes: "En unos meses cambiará el rostro del Blvd. Ojo de Agua.",
-      imagenes: ["/logros-2.png"],
-      descripcion: "Con Mariela Gutiérrez, inspeccionamos obras: 1) Colector 35% (fondos municipales). 2) Reparación vial Tonanitla-Tecámac. Fondos estatales insuficientes; municipio invertirá 100M, apoyado por la próxima Gobernadora.",
-      link: "https://www.facebook.com/samuelhernandez2021/posts/pfbid02cugac8MDWAK2q7HKbhXVMpL7CBXE1yonGVFWPeaVapvgSnk5L3fz1pndRFA2QMACl"
     },
     {
       likes: "El CallCenter de ODAPAS, el mas eficiente del municipio.",
       imagenes: ["/logros-3.jpeg"],
       descripcion: "Atendemos diariamente a más de 600 usuarios del #ODAPAS por WhatsApp, gestionando reportes, dudas y trámites. Mejoramos la atención a 170 mil usuarios, siempre comprometidos. Contáctanos al 📲 56 4407 0673.",
       link: "https://www.facebook.com/samuelhernandez2021/posts/pfbid0349D31KC6RNYKLc5nY6Soj3cHoLWt5LGu1qeuBPKgnTUfdg9EYdNCUVAC9UwZVNUel"
+    },
+    {
+      likes: "En unos meses cambiará el rostro del Blvd. Ojo de Agua.",
+      imagenes: ["/logros-2.png"],
+      descripcion: "Con Mariela Gutiérrez, inspeccionamos obras: 1) Colector 35% (fondos municipales). 2) Reparación vial Tonanitla-Tecámac. Fondos estatales insuficientes; municipio invertirá 100M, apoyado por la próxima Gobernadora.",
+      link: "https://www.facebook.com/samuelhernandez2021/posts/pfbid02cugac8MDWAK2q7HKbhXVMpL7CBXE1yonGVFWPeaVapvgSnk5L3fz1pndRFA2QMACl"
     },
     {
       likes: "¡En #Tecámac ya contamos con una sede de la UAM Azcapotzalco!",
