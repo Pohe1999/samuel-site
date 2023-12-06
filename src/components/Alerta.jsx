@@ -10,7 +10,7 @@ const AlertaTemporal = () => {
 
     const timeoutOcultar = setTimeout(() => {
       setMostrarAlerta(false);
-    }, 9000); // 5 segundos en milisegundos
+    }, 7000); // 5 segundos en milisegundos
 
     return () => {
       clearTimeout(timeoutMostrar);
