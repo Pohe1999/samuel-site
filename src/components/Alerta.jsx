@@ -8,7 +8,7 @@ const AlertaTemporal = () => {
   useEffect(() => {
     const timeoutMostrar = setTimeout(() => {
       setMostrarAlerta(true);
-    }, 10000); // 10 segundos en milisegundos
+    }, 15000); // 10 segundos en milisegundos
 
     const timeoutOcultar = setTimeout(() => {
       setMostrarAlerta(false);
