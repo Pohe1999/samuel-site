@@ -38,7 +38,7 @@ const Main = () => {
                         y Asuntos Públicos. Continué mi trayectoria académica con la Maestría en Planeación y Políticas Metropolitanas.
                         <br /> <br />
                         Desde 2011, soy militante fundador de MORENA y he participado activamente en movimientos sociales y políticos como <a href="https://es.wikipedia.org/wiki/Yo_Soy_132" target='_blank' className='text-red-900 hover:border-b-2'>#YoSoy132.</a>
-                        Ádemás, colaboré en las campañas de AMLO en 2012 y 2018. He desempeñado roles importantes, incluyendo servicio público en el gobierno
+                        Además, colaboré en las campañas de AMLO en 2012 y 2018. He desempeñado roles importantes, incluyendo servicio público en el gobierno
                         federal, secretario del ayuntamiento de Tecámac, y director general del Organismo Municipal del Agua, ODAPAS. Actualmente,
                         tengo el honor de formar parte del destacado gobierno de Tecámac liderado por la Licenciada Mariela Gutiérrez.
                       </p>
