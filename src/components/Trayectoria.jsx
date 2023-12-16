@@ -22,7 +22,7 @@ const Trayectoria = () => {
           "Colaboré junto al presidente de México en el sector salud, donde llevamos a cabo la contratación de más de 6 mil médicos y enfermeras para atender la pandemia del COVID-19. Trabajamos para combatir la corrupción en el ISSSTE.",
       },
       {
-        title: "Secretario de ayuntamiento",
+        title: "Secretario de Ayuntamiento",
         image: "/tecamac-logo.png",
         description:
           "En julio de 2021 fui designado Secretario del Ayuntamiento de Tecámac, cargo en el que impulsé convenios con el ISSSTE para llevar a cabo la construcción de la nueva Clínica de Medicina Familiar en Tecámac y el Centro de Innovación y Desarrollo Tecnológico de la UAM.",
