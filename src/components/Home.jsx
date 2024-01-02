@@ -29,7 +29,7 @@ const Home = () => {
         <div className="sm:w-full sm:h-full w-full h-[250px] overflow-hidden">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/yktq7IBkKXw?enablejsapi=1&autoplay=0&modestbranding=1&controls=0"
+            src="https://www.youtube.com/embed/QIR38mIfnuE?si=qXqj0zNFDPE30Yu1&autoplay=1&modestbranding=1&controls=0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
