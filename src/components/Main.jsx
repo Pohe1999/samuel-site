@@ -20,7 +20,7 @@ const Main = () => {
     };
   
     return (
-      <div name='main' className='w-full h-full bg-white text-grey-900 pb-40'>
+      <div name='main' className='w-full h-full bg-white text-grey-900 pb-40 pt-32'>
           <div className='flex flex-col justify-center items-center w-full h-auto'>
               <div className='sm:text-right pb-8 mt-20 px-4'>
                   <div className='text-center font-thin text-xl sm:text-6xl text-white bg-red-900 bg-opacity-80 rounded-xl px-10 py-4'>
