@@ -1,26 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 const Home = () => {
-  const [showVideo, setShowVideo] = useState(false);
-  const videoRef = useRef(null);
+  const [showVideo, setShowVideo] = useState(false)
 
   const handlePlay = () => {
     setShowVideo(true);
-    if (videoRef.current) {
-      videoRef.current.contentWindow.postMessage(
-        '{"event":"command","func":"playVideo","args":""}',
-        '*'
-      );
-    }
   };
 
   return (
-    <div className="flex justify-center items-center sm:h-screen pt-16">
+    <div className="flex justify-center items-center sm:h-screen pt-16 bg-black">
       {!showVideo ? (
-        <div className='text-center pt-40'>
+        <div className='text-center'>
           <button
             onClick={handlePlay}
-            className="bg-black text-white font-bold py-2 px-4 rounded-lg"
+            className="bg-red-900 my-28 text-white font-bold py-2 px-4 rounded-lg"
           >
             Reproduce el Mensaje
           </button>
@@ -29,12 +22,11 @@ const Home = () => {
         <div className="sm:w-full sm:h-full w-full h-[250px] overflow-hidden">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/IMDpyTP6qqE?si=iqLbHxjwc4HtS4L9&autoplay=1&modestbranding=1&controls=0"
+            src="https://www.youtube.com/embed/IMDpyTP6qqE?si=iqLbHxjwc4HtS4L9&autoplay=1&modestbranding=1"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            ref={videoRef}
             style={{ width: '100%', height: '100%' }}
           ></iframe>
         </div>
