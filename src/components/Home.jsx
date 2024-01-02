@@ -26,7 +26,7 @@ const Home = () => {
           </button>
         </div>
       ) : (
-        <div className="sm:w-full sm:h-full w-full h-[210px] overflow-hidden">
+        <div className="sm:w-full sm:h-full w-full h-[250px] overflow-hidden">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/yktq7IBkKXw?enablejsapi=1&autoplay=0&modestbranding=1&controls=0"
