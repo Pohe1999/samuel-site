@@ -21,9 +21,8 @@ const Home = () => {
           </button>
         </div>
       ) : (
-        <div className="sm:w-full sm:h-full w-full h-[250px] overflow-hidden">
+        <div className="sm:w-screen sm:h-screen w-full h-[221px] overflow-hidden">
           <iframe
-            className="w-full h-full"
             src={videoSrc} // Utiliza el estado videoSrc como src del iframe
             title="YouTube video player"
             frameBorder="0"
