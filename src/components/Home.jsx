@@ -13,7 +13,7 @@ const Home = () => {
         <div className='text-center'>
           <button
             onClick={handlePlay}
-            className="bg-red-900 my-28 text-white font-bold py-2 px-4 rounded-lg"
+            className="bg-red-900 my-28 text-white font-normal py-2 px-4 rounded-lg"
           >
             Reproduce el Mensaje
           </button>
