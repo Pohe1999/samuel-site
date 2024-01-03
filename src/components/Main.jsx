@@ -20,15 +20,17 @@ const Main = () => {
     };
   
     return (
-      <div name='main' className='w-full h-full bg-white text-grey-900 pb-40 pt-32'>
+      <div name='main' className='w-full h-full bg-white text-grey-900 pb-40  pt-32'>
           <div className='flex flex-col justify-center items-center w-full h-auto'>
               <div className='sm:text-right pb-8 mt-20 px-4'>
+                <Link to='main-image' smooth={true}>
                   <div className='text-center font-thin text-xl sm:text-6xl text-white bg-red-900 bg-opacity-80 rounded-xl px-10 py-4'>
-                      <MovingText type="typewriter" dataText={['¿Quién es Samuel Hernández?']} />
+                      <MovingText type="typewriter" dataText={['¿Quien es Samuel Hernández?']} />
                   </div>
+                </Link>
               </div>
-              <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                  <div className='sm:text-right text-4xl font-bold cursor-pointer sm:mt-2 mt-20' onClick={handleImageClick}>
+              <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4' name="main-image">
+                  <div className='sm:text-right text-4xl font-bold sm:mt-2 mt-20' onClick={handleImageClick}>
                       <img className='rounded-xl' src={mainImage} alt='main image' />
                   </div>
                   <div className='flex items-center'>
