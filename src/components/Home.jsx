@@ -10,7 +10,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex justify-center items-center sm:h-screen pt-16 bg-black">
+    <div name="home" className="flex justify-center items-center sm:h-screen pt-16 bg-black">
       {!showVideo ? (
         <div className='text-center'>
           <button
