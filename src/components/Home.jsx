@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 const Home = () => {
-  const [showVideo, setShowVideo] = useState(false)
+  const [showVideo, setShowVideo] = useState(false);
+  const [videoSrc, setVideoSrc] = useState(''); // Estado para almacenar la URL del video
 
   const handlePlay = () => {
     setShowVideo(true);
+    setVideoSrc('https://www.youtube.com/embed/IMDpyTP6qqE?si=iqLbHxjwc4HtS4L9&autoplay=1&modestbranding=1&controls=0');
   };
 
   return (
@@ -22,7 +24,7 @@ const Home = () => {
         <div className="sm:w-full sm:h-full w-full h-[250px] overflow-hidden">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/IMDpyTP6qqE?si=iqLbHxjwc4HtS4L9&autoplay=1&modestbranding=1&controls=0"
+            src={videoSrc} // Utiliza el estado videoSrc como src del iframe
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
