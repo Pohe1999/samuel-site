@@ -6,7 +6,7 @@ const Home = () => {
 
   const handlePlay = () => {
     setShowVideo(true);
-    setVideoSrc('https://www.youtube.com/embed/IMDpyTP6qqE?si=iqLbHxjwc4HtS4L9&autoplay=1&modestbranding=1&controls=0');
+    setVideoSrc('https://www.youtube.com/embed/rCdIIdGzQZI?si=DZMBblrEttldmXL1&autoplay=1&modestbranding=1&controls=0');
   };
 
   return (
