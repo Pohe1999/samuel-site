@@ -5,3 +5,237 @@
 .background {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 50%, #fec66d 30%);
 }
+
+/* styles.css */
+.welcome-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform, opacity;
+}
+
+/* index.css */
+
+.fixed {
+    position: fixed;
+}
+
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.transform {
+    transform: translateX(0);
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+
+.-translate-x-full {
+    transform: translateX(-100%);
+}
+
+.lg\\:hidden {
+    display: none !important;
+}
+
+.bg-orange-100 {
+    background-color: #fff3e0;
+}
+
+.text-black {
+    color: #000;
+}
+
+.hover\\:bg-orange-700:hover {
+    background-color: #fb8c00;
+}
+
+.hover\\:text-white:hover {
+    color: #fff;
+}
+
+/* index.css */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #A00D16;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #000000;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #E18080;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+  
+  /* From Uiverse.io by Creatlydev */ 
+  @keyframes text-rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .button {
+    cursor: pointer;
+    border: none;
+    background: #821e30;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    transition: transform 200ms;
+    font-weight: 600;
+  }
+  
+  .button__text {
+    position: absolute;
+    inset: 0;
+    animation: text-rotation 8s linear infinite;
+  }
+  
+  .button__text > span {
+    position: absolute;
+    transform: rotate(calc(19deg * var(--index)));
+    inset: 7px;
+  }
+  
+  .button__circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: #fff;
+    color: #7f1d1d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button__icon--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover {
+    background: #000;
+    transform: scale(1.05);
+  }
+  
+  .button:hover .button__icon {
+    color: #000;
+  }
+  
+  .button:hover .button__icon:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
+  
+  @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Cambia esto para que se desplace el 100% del contenedor */
+    }
+}
+
+.animate-scroll {
+    display: flex; /* Asegúrate de que el contenedor sea flexible para que los hijos se alineen en fila */
+    animation: scroll 20s linear infinite; /* Ajusta la duración según lo necesites */
+}
+
+
+.fondo3d {
+  width: 100%;
+  height: 100%;
+  --s: 82px;
+  --c1: rgba(200, 200, 200, 0.2); /* Gris similar */
+  --c2: rgba(200, 200, 200, 0.1); /* Gris similar */
+  --c3: rgba(200, 200, 200, 0.15); /* Gris similar */
+
+  --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+    linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    );
+  background-size: calc(1.732 * var(--s)) var(--s);
+}

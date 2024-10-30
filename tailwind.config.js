@@ -13,10 +13,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pacifico: ['Pacifico', 'cursive'],
-        'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
-        oswald: ['Oswald', 'sans-serif'],
-        ubuntu: ['Ubuntu', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'], // Poppins será la fuente predeterminada
       },
     },
   },

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const Personal = () => {
   const [currentImages] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
@@ -6,24 +6,17 @@ const Personal = () => {
   const cardsData = [
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "Estadio Azteca",
-      likes: "Apoyando al Cruz Azul",
-      imagenes: ["/card-3.jpeg"],
-      link: "https://www.facebook.com/photo.php?fbid=862625555666007&set=pb.100057557125317.-2207520000&type=3"
+      ubicacion: "biblioteca José Vasconcelos",
+      likes: "Saludando a la Presidenta",
+      imagenes: ["/card-9.png"],
+      link: "https://www.facebook.com/photo.php?fbid=797395995522297&set=a.515665293695370&type=3&mibextid=WC7FNe"
     },
     {
       nombre: "hrnndzsamuel",
       ubicacion: "Tecamac",
-      likes: "Nos encontramos a este amigo",
+      likes: "Encontramos a un amigo",
       imagenes: ["/card-10.png"],
       link: "https://www.facebook.com/photo.php?fbid=699046562023908&set=a.515665293695370&type=3&mibextid=WC7FNe"
-    },
-    {
-      nombre: "hrnndzsamuel",
-      ubicacion: "Ciudad de Mexico",
-      likes: "Saludando a la doctora",
-      imagenes: ["/card-9.png"],
-      link: "https://www.facebook.com/photo.php?fbid=797395995522297&set=a.515665293695370&type=3&mibextid=WC7FNe"
     },
     {
       nombre: "hrnndzsamuel",
@@ -41,8 +34,15 @@ const Personal = () => {
     },
     {
       nombre: "hrnndzsamuel",
+      ubicacion: "Estadio Azteca",
+      likes: "Apoyando al Cruz Azul",
+      imagenes: ["/card-3.jpeg"],
+      link: "https://www.facebook.com/photo.php?fbid=862625555666007&set=pb.100057557125317.-2207520000&type=3"
+    },
+    {
+      nombre: "hrnndzsamuel",
       ubicacion: "Palacio Municipal",
-      likes: "Celebrando la independenia",
+      likes: "Celebrando el 15! 🇲🇽🇲🇽🇲🇽",
       imagenes: ["/card-4.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=856242786304284&set=pb.100057557125317.-2207520000"
     },
@@ -55,7 +55,7 @@ const Personal = () => {
     },
     {
       nombre: "hrnndzsamuel",
-      ubicacion: "",
+      ubicacion: "Tecamac",
       likes: "terminando el año",
       imagenes: ["/card-6.jpeg"],
       link: "https://www.facebook.com/photo/?fbid=665478295380735&set=pb.100057557125317.-2207520000"
@@ -64,8 +64,7 @@ const Personal = () => {
       nombre: "hrnndzsamuel",
       ubicacion: "Taqueria Arandas",
       likes: "Disfrutando unos tacos",
-      imagenes: ["/card-7.jpeg"],
-      link: "https://www.facebook.com/photo.php?fbid=626380562623842&set=pb.100057557125317.-2207520000&type=3"
+      imagenes: ["/card-7.jpeg"]
     },
     {
       nombre: "hrnndzsamuel",
@@ -76,10 +75,12 @@ const Personal = () => {
     }
   ];
 
+  const instaPerfil = "https://www.instagram.com/hrnndzsamuel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+
   return (
     <div className="bg-gray-100 p-4 mt-20 mb-40 pb-10">
       <div className="text-center pb-10">
-        <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>Un poco más de mi</h2>
+        <h2 className='text-4xl font-bold inline border-b-4 border-red-700'>Un poco mas de mi</h2>
       </div>
       <h3 className="text-center font-thin mb-7 text-xl">
         Les comparto un poco más de mi vida personal y mis pasatiempos.
@@ -93,9 +94,11 @@ const Personal = () => {
             style={{ minWidth: '320px', width: '100%' }}
           >
             <div className="flex items-center px-4 py-3">
-              <img className="h-8 w-8 rounded-full" src="/galeria/samuel-perfil.jpeg" alt="Profile" />
+              <img className="h-8 w-8 rounded-full" src="/galeria-movil-3.jpeg" alt="Profile" />
               <div className="ml-3">
-                <span className="text-sm font-semibold antialiased block leading-tight">{cardsData[index].nombre}</span>
+                <a href={instaPerfil} target="_blank">
+                  <span className="text-sm font-semibold antialiased block leading-tight">{cardsData[index].nombre}</span>
+                </a>
                 <span className="text-gray-600 text-xs block">{cardsData[index].ubicacion}</span>
               </div>
             </div>
@@ -107,7 +110,7 @@ const Personal = () => {
               />
             </div>
             <div className="flex justify-between items-center  text-sm mx-4 mt-2 mb-4">
-              <div className="font-semibold">{cardsData[index].likes}</div>
+              <div className=" font-medium">{cardsData[index].likes}</div>
               <a className="font-thin bg-black rounded-xl text-white px-2 py-1 cursor-pointer" href={cardsData[index].link} target="_blank">Ver mas</a>
             </div>
           </div>
@@ -117,4 +120,4 @@ const Personal = () => {
   );
 };
 
-export default Personal;
+export default Personal

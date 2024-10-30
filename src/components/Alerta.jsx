@@ -3,12 +3,12 @@ import DownloadButton from './DownloadButton';
 import { FaTimes } from 'react-icons/fa'; // Importa el ícono de cierre desde react-icons
 
 const AlertaTemporal = () => {
-  const [mostrarAlerta, setMostrarAlerta] = useState(true);
+  const [mostrarAlerta, setMostrarAlerta] = useState(true)
 
   useEffect(() => {
     const timeoutMostrar = setTimeout(() => {
       setMostrarAlerta(true);
-    }, 20000); // 10 segundos en milisegundos
+    }, 10000); // 10 segundos en milisegundos
 
     const timeoutOcultar = setTimeout(() => {
       setMostrarAlerta(false);

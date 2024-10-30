@@ -7,23 +7,24 @@ import Contact from './components/Contacto'
 import Publicaciones from './components/Publicaciones'
 import Footer from './components/Footer'
 import Galeria from './components/Galeria'
-import SocialMediaButtons from './components/SocialMedia'
 import Personal from './components/Personal'
-import Logros from './components/Logros'
-
+import Direccion from './components/Direccion'
+import SendMessage from './components/SendMessage'
+import Comisiones from './components/Comisiones'
 
 function App() {
 
   return (
     <>
       <Navbar />
+      <SendMessage />
       <Home />
       <Main />
+      <Comisiones />
       <Trayectoria />
-      <Logros />
-      <Personal />
-      <Galeria />
       <Publicaciones />
+      <Personal />
+      <Direccion />
       <Contact />
       <Footer />
     </>

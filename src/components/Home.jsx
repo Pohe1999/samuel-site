@@ -1,39 +1,83 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTransition, animated } from 'react-spring';
+import { FaArrowDown } from "react-icons/fa";import '../index.css';
+import { Link } from 'react-scroll';
+import Social from './Social';
 
-const Home = () => {
-  const [showVideo, setShowVideo] = useState(false);
-  const [videoSrc, setVideoSrc] = useState(''); // Estado para almacenar la URL del video
+const largeImages = [
+    '/samuel-movil-1.JPG',
+    '/galeria-3.JPG',
+    '/samuel-movil-2.JPG'
+];
 
-  const handlePlay = () => {
-    setShowVideo(true);
-    setVideoSrc('https://www.youtube.com/embed/rCdIIdGzQZI?si=DZMBblrEttldmXL1&autoplay=1&modestbranding=1&controls=0');
-  };
+const mobileImages = [
+    '/sam-home-1.JPG',
+    '/sam-home-2.jpeg',
+    '/sam-home-3.jpeg'
+];
 
-  return (
-    <div name="home" className="flex justify-center items-center sm:h-screen pt-16 bg-black">
-      {!showVideo ? (
-        <div className='text-center'>
-          <button
-            onClick={handlePlay}
-            className="bg-red-900 my-28 text-white font-normal py-2 px-4 rounded-lg"
-          >
-            Reproduce el Mensaje
-          </button>
+const MainPage = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const images = isMobile ? mobileImages : largeImages;
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    const transitions = useTransition(currentIndex, {
+        key: currentIndex,
+        from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+        enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+        leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
+        config: { duration: 2000 },
+    });
+
+    return (
+        <div name="home" className="">
+            <div className="welcome-section relative text-center py-20 h-screen">
+                <div className="absolute inset-0 z-0">
+                    {transitions((style, index) => (
+                        <animated.div
+                            key={index}
+                            className="absolute inset-0"
+                            style={{
+                                ...style,
+                                backgroundImage: `url(${images[index]})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat',
+                            }}
+                        />
+                    ))}
+                </div>
+
+                {/* Capa semi-transparente encima del carrusel */}
+                <div className="absolute inset-0 bg-orange-50 opacity-10 z-10"></div>
+
+                {/* Animación de flecha hacia abajo */}
+                <div className="absolute bottom-20 left-5 z-20 bg-gray-50 p-3 rounded-full opacity-80"> {/* Cambiar a left-5 para el extremo izquierdo */}
+                    <Link className='main__scroll cursor-pointer' to='main' smooth={true} duration={1000}>
+                        <FaArrowDown className="text-black text-4xl animate-bounce" />
+                    </Link>
+                </div>
+            </div>
         </div>
-      ) : (
-        <div className="sm:w-screen sm:h-screen w-full h-[221px] overflow-hidden">
-          <iframe
-            src={videoSrc} // Utiliza el estado videoSrc como src del iframe
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            style={{ width: '100%', height: '100%' }}
-          ></iframe>
-        </div>
-      )}
-    </div>
-  );
+    );
 };
 
-export default Home;
+export default MainPage;

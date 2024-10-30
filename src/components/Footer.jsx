@@ -1,11 +1,10 @@
 const Footer = () => {
 
     return(
-        <div name="footer" className="bg-red-900 py-6 font-thin text-sm">
-            <p className="text-center text-white">Politicas de privacidad</p>
+        <div name="footer" className="bg-[#821e30] py-3 font-thin text-xs">
             <p className="text-center text-white">
-                @ 2023 Creado por: 
-                <a href="https://www.instagram.com/mauriciopgz/" target="_blank"> Mauricio Portillo Gutierrez</a>
+                Politicas de privacidad <br /> @2024 
+                <a href="https://www.instagram.com/mauriciopgz/" target="_blank"> Mauricio Portillo</a>
             </p>
         </div>
     )
