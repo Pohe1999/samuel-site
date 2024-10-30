@@ -8,18 +8,29 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const scrollThreshold = 50; // Umbral para ocultar el navbar
+  const showThreshold = 10;   // Umbral para mostrar el navbar al subir
 
   const handleClick = () => setNav(!nav);
 
-  // Detectar el scroll en todos los dispositivos
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setShowNavbar(false); // Ocultar cuando se desplaza hacia abajo
-      } else {
-        setShowNavbar(true); // Mostrar cuando se desplaza hacia arriba
+      const currentScrollY = window.scrollY;
+
+      // Si el usuario está en la parte superior de la página
+      if (currentScrollY === 0) {
+        setShowNavbar(true);
+      } 
+      // Si se desplaza hacia abajo
+      else if (currentScrollY > lastScrollY + scrollThreshold) {
+        setShowNavbar(false); // Ocultar navbar
+      } 
+      // Si se desplaza hacia arriba
+      else if (currentScrollY < lastScrollY - showThreshold) {
+        setShowNavbar(true); // Mostrar navbar
       }
-      setLastScrollY(window.scrollY);
+
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
