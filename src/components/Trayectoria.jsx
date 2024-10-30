@@ -18,7 +18,7 @@ const Trayectoria = () => {
     },
     {
       title: "Participación ISSSTE",
-      image: "/gobierno-logo.png",
+      image: "/gobierno-logo-sin-fondo.png",
       description:
         "Colaboré junto al presidente de México en el sector salud, donde llevamos a cabo la contratación de más de 6 mil médicos y enfermeras para atender la pandemia del COVID-19. Trabajamos para combatir la corrupción en el ISSSTE.",
     },

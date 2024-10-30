@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`fixed z-50 w-full h-[60px] md:h-[70px] xl:h-[85px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-[#821e30] text-gray-300 transition-transform duration-300 shadow-2xl ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
+        className={`fixed z-50 w-full h-[80px] md:h-[70px] xl:h-[85px] flex font-thin justify-between items-center sm:ps-20 sm:pe-20 px-4 bg-[#821e30] text-gray-200 transition-transform duration-300 shadow-2xl ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
         style={{ 
           backgroundImage: '', 
           backgroundSize: 'cover', 

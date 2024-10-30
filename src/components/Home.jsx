@@ -70,7 +70,7 @@ const MainPage = () => {
                 <div className="absolute inset-0 bg-orange-50 opacity-10 z-10"></div>
 
                 {/* Animación de flecha hacia abajo */}
-                <div className="absolute bottom-20 left-5 z-20 bg-gray-50 p-3 rounded-full opacity-80"> {/* Cambiar a left-5 para el extremo izquierdo */}
+                <div className="absolute bottom-28 left-5 z-20 bg-gray-50 p-3 rounded-full opacity-80"> {/* Cambiar a left-5 para el extremo izquierdo */}
                     <Link className='main__scroll cursor-pointer' to='main' smooth={true} duration={1000}>
                         <FaArrowDown className="text-black text-4xl animate-bounce" />
                     </Link>
