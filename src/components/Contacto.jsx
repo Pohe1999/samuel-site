@@ -45,7 +45,7 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row justify-between">
                     <div className="md:w-1/2 md:pr-8">
                         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105">
-                            <h2 className="text-2xl font-bold text-[#821e30] mb-6 text-center">Enviame un correo aqui:</h2>
+                            <h2 className="text-2xl font-bold text-[#821e30] mb-6 text-center">¡Enviame un correo aqui!:</h2>
                             <div className="mb-4">
                                 <label htmlFor="nombre" className="block text-gray-700 font-semibold mb-1">Nombre</label>
                                 <input
