@@ -15,11 +15,11 @@ const SocialButtons = () => {
         <FaInstagram className="text-white" />
       </a>
       <a className="w-10 h-10 bg-black rounded-full flex justify-center items-center transition-all duration-300 transform hover:translate-y-[-5px] hover:bg-gray-800" 
-         href="https://www.tiktok.com/" aria-label="TikTok"  target='_blank'>
+         href="https://www.tiktok.com/@samuelhernandez2024?_t=8qz9TJQk1MU&_r=1" aria-label="TikTok"  target='_blank'>
         <FaTiktok className="text-white" />
       </a>
       <a className="w-10 h-10 bg-black rounded-full flex justify-center items-center transition-all duration-300 transform hover:translate-y-[-5px] hover:bg-blue-500" 
-         href="https://www.twitter.com/" aria-label="Twitter"  target='_blank'>
+         href="https://x.com/hrnndzsamuel?s=21&t=LmBZZvLda0Lr5wQIwnX91Q" aria-label="Twitter"  target='_blank'>
         <FaSquareXTwitter className="text-white" />
       </a>
     </div>

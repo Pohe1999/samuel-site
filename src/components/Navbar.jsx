@@ -54,7 +54,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link className='cursor-pointer hover:text-gray-300' to='main' smooth={true} duration={1000}>
-              ¿Quien soy?
+              ¿Quién soy?
             </Link>
           </li>
           <li>
@@ -69,7 +69,7 @@ const Navbar = () => {
           </li>
           <li className='relative inline-block font-medium text-[17px] rounded-md bg-black border-none cursor-pointer'>
             <Link to='contacto' smooth={true} duration={1000}>
-              <span className='block border-2 border-red-900 rounded-md bg-gray-200 text-black py-2 px-2 transform -translate-y-0.5 transition-transform duration-100 ease-in hover:-translate-y-1 active:translate-y-0'>Contactame</span>
+              <span className='block border-2 border-red-900 rounded-md bg-gray-200 text-black py-2 px-2 transform -translate-y-0.5 transition-transform duration-100 ease-in hover:-translate-y-1 active:translate-y-0'>Contáctame</span>
             </Link>
           </li>
         </ul>
@@ -94,7 +94,7 @@ const Navbar = () => {
           </li>
           <li className='py-6 text-4xl font-extrabold italic'>
             <Link onClick={handleClick} to='main' smooth={true} duration={1000}>
-              ¿Quien soy?
+              ¿Quién soy?
             </Link>
           </li>
           <li className='py-6 text-4xl font-extrabold italic'>
@@ -121,7 +121,7 @@ const Navbar = () => {
               <span
                 className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-50 px-7 text-2xl italic font-extrabold text-gray-900 backdrop-blur-3xl gap-2"
               >
-                Contactame
+                Contáctame
                 <svg
                   stroke="currentColor"
                   fill="currentColor"

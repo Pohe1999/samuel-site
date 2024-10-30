@@ -38,7 +38,7 @@ const Main = () => {
           <div className='sm:text-3xl md:text-4xl text-lg bg-[#821e30] text-white opacity-100 px-2 py-4  font-extrabold italic'>
             <MovingComponent type="typewriter"
               dataText={[
-                '¿Quién es Samuel Hernandez?',
+                '¿Quién es Samuel Hernández?',
               ]} />
           </div>
         </div>

@@ -38,7 +38,7 @@ const Trayectoria = () => {
       title: "Diputado local Distrito 33",
       image: "/bg-4.png",
       description:
-        "El 2 de junio del 2024 fui electo diputado local por el distrito 33, para representar los municipios de Tecámac, Axapusco, Nopaltepec, Temascalapa, San Juan Teotihuacán y San Juan de las Pirámides. El 5 de septiembre tomé protesta como integrante de la LXII legislatura para el periodo 2025 - 2027.",
+        "El 2 de junio de 2024 fui electo diputado local por el distrito 33, para representar los municipios de Tecámac, Axapusco, Nopaltepec, Temascalapa, San Juan Teotihuacán y San Juan de las Pirámides. El 5 de septiembre tomé protesta como integrante de la LXII legislatura para el periodo 2025 - 2027.",
       backgroundImage: "/bg-2.jpg", // Asegúrate de tener esta imagen disponible
     }
   ];

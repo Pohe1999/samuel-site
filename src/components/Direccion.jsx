@@ -21,7 +21,7 @@ const Direccion = () => {
         </div>
         <div className="w-full md:w-1/2 p-5">
           <p className="text-gray-700">
-            <span className="text-xl font-bold mb-4">Visita las oficinas de atencion ciudadana ubicadas en:  </span>
+            <span className="text-xl font-bold mb-4">Visita las oficinas de atención ciudadana ubicadas en:  </span>
             Hidalgo 4, San Francisco Cuautliquixca, 55760 Ojo de Agua, Méx.
           </p>
     <button className="cta">

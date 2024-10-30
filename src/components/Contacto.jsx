@@ -45,7 +45,7 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row justify-between">
                     <div className="md:w-1/2 md:pr-8">
                         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105">
-                            <h2 className="text-2xl font-bold text-[#821e30] mb-6 text-center">¡Enviame un correo aqui!:</h2>
+                            <h2 className="text-2xl font-bold text-[#821e30] mb-6 text-center">Envíame un correo aqui:</h2>
                             <div className="mb-4">
                                 <label htmlFor="nombre" className="block text-gray-700 font-semibold mb-1">Nombre</label>
                                 <input
@@ -142,7 +142,7 @@ const Contact = () => {
                     </div>
                     <div className="md:w-1/2 md:pl-8 mt-10 md:mt-0">
                         <div className="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition-transform hover:scale-105">
-                            <h3 className="text-xl font-bold mb-4 text-[#821e30]">Sígueme en mis redes sociales!</h3>
+                            <h3 className="text-xl font-bold mb-4 text-[#821e30]">¡Sígueme en mis redes sociales!</h3>
                             <SocialButtons />
                         </div>
                     </div>
