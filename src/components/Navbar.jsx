@@ -1,43 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-scroll';
-import Social from './Social';
-import DownloadButton from './DownloadButton';
+import React, { useState, useEffect } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-scroll'
+import Social from './Social'
+import DownloadButton from './DownloadButton'
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const scrollThreshold = 15; // Umbral para ocultar el navbar
-  const showThreshold = 10;   // Umbral para mostrar el navbar al subir
+  const [nav, setNav] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+  const scrollThreshold = 15 // Umbral para ocultar el navbar
+  const showThreshold = 10  // Umbral para mostrar el navbar al subir
 
-  const handleClick = () => setNav(!nav);
+  const handleClick = () => setNav(!nav)
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY
 
       // Si el usuario está en la parte superior de la página
       if (currentScrollY === 0) {
-        setShowNavbar(true);
+        setShowNavbar(true)
       } 
       // Si se desplaza hacia abajo
       else if (currentScrollY > lastScrollY + scrollThreshold) {
-        setShowNavbar(false); // Ocultar navbar
+        setShowNavbar(false) // Ocultar navbar
       } 
       // Si se desplaza hacia arriba
       else if (currentScrollY < lastScrollY - showThreshold) {
-        setShowNavbar(true); // Mostrar navbar
+        setShowNavbar(true) // Mostrar navbar
       }
 
-      setLastScrollY(currentScrollY);
-    };
+      setLastScrollY(currentScrollY)
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [lastScrollY])
 
   return (
     <div>
@@ -159,4 +159,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar
