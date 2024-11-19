@@ -6,6 +6,6 @@ import SendMessage from './components/SendMessage.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <App />
+      {/* <App /> */}
   </React.StrictMode>,
 )
